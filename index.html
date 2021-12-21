@@ -24,15 +24,39 @@
           min-height: 100%;
           padding: 2rem;
           display: flex;
+          text-align: center;
           flex-flow: row wrap;
           align-items: center;
           align-content: center;
           justify-content: center;
         }
-       h1 {
-         font-size: 3rem;
-         font-size: 3vw;
-       }
+        h1 {
+          text-align: center;
+          font-size: 5rem;
+          font-size: clamp(4rem, 12vw, 10rem);
+          text-transform: none;
+        }
+        span {
+          display: block;
+          font-size: 1.5rem;
+          font-size: clamp(1.5rem, 3vw, 2rem);
+          text-transform: uppercase;
+        }
+        div {
+          width: 100%;
+        }
+        a {
+          color: #fff;
+          text-transform: none;
+          display: inline-block;
+          padding-bottom: 0.25em;
+          text-decoration: none;
+          border-bottom: 1px solid currentColor;
+        }
+        a:hover {
+          color: #00ffff;
+          text-decoration: none;
+        }
     </style>
   </head>
 
@@ -40,9 +64,12 @@
   <body>
     <div id="container">
       <h1>
-        It's called
-        <span>Algorand</span>
+        <span>It's called</span>
+        Algorand
       </h1>
+      <div>
+        <a href="https://algorand.foundation/algo-101">Algo&thinsp;what?</a>
+      </div>
     </div>
 
   </body>
